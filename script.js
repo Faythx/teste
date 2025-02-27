@@ -79,14 +79,23 @@ function newKey (id) {
     if(painel=='1') {
         key_01.innerHTML = current_text;
         display_window.document.getElementById('key-01').innerHTML = current_text;
+        let pnl_1 = display_window.document.getElementById('1-pnl');
+        setTimeout(removeBlink, 5000, painel);
+        pnl_1.classList.add("alert");
     }
     else if(painel=='2') {
         key_02.innerHTML = current_text;
         display_window.document.getElementById('key-02').innerHTML = current_text;
+        let pnl_2 = display_window.document.getElementById('2-pnl');
+        setTimeout(removeBlink, 5000, painel);
+        pnl_2.classList.add("alert");
     }
     else if(painel=='3') {
         key_03.innerHTML = current_text;
         display_window.document.getElementById('key-03').innerHTML = current_text;
+        let pnl_3 = display_window.document.getElementById('3-pnl');
+        setTimeout(removeBlink, 5000, painel);
+        pnl_3.classList.add("alert");
     }
     current_key.innerHTML = current_text;
 }
