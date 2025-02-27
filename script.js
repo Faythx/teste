@@ -80,6 +80,7 @@ function newKey (id) {
         key_01.innerHTML = current_text;
         display_window.document.getElementById('key-01').innerHTML = current_text;
         let pnl_1 = display_window.document.getElementById('1-pnl');
+        console.log('PISCA!');
         setTimeout(removeBlink, 5000, painel);
         pnl_1.classList.add("alert");
     }
